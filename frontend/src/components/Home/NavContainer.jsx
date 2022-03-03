@@ -25,7 +25,7 @@ export default NavContainer
 const NavContainerStyled=styled.div`
 height: 100px;
 font-size: 1.3rem;
-width: 100vw;
+/* width: 100vw; */
 display: flex;
 padding: 0 3rem;
 justify-content: space-between;

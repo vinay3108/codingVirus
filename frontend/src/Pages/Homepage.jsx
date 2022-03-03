@@ -9,19 +9,15 @@ import styled from 'styled-components'
 
 const Homepage = () => {
   return (
-    <HomePageStyled>
+    <>
         <HeadContainer/>
         <TechnologyLearn/>
         <BannerContainer/>
         <ChooseContainer/>
         {/* <Testimonial/> */}
-        {/* <Footer/> */}
-    </HomePageStyled>
+        <Footer/>
+    </>
   )
 }
 
 export default Homepage
-const HomePageStyled=styled.div`
-width: 100vw;
-
-`
