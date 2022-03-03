@@ -26,9 +26,9 @@ const HeadContainer = () => {
 export default HeadContainer
 
 const HeadContainerStyled=styled.div`
-    width: 100vw;
+    width: 100%;
     height: 70vh;
-    /* border:1px solid red; */
+    border:1px solid red;
     
     position: relative;
     .container{
@@ -82,8 +82,9 @@ const HeadContainerStyled=styled.div`
         top:0;
         left: 0;
         position: absolute;
-        border-radius: 0px 0px 250px 0px;
+        /* border-radius: 0px 0px 250px 0px; */
         /* background:url("/images/header.jpg")center center/cover; */
+        border: 1px solid green;
         background-color: #159b9b;
         z-index: -1;
     }

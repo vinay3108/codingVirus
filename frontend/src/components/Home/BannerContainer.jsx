@@ -23,10 +23,10 @@ const BannerContainer = () => {
 
 export default BannerContainer
 const BannerContainerStyled=styled.div`
-width: 100vw;
+width: 100%;
 margin-top: 2rem;
 height: 100vh;
-/* border: 1px solid red; */
+border: 1px solid red;
 position: relative;
 display: grid;
 grid-template-columns: 1fr 3fr;
@@ -42,23 +42,11 @@ div{
 &::before{
     content: "";
     height: 100%;
-    width: 100%;
+    width: 99%;
     position: absolute;
     top:0;
     left: 0;
     background-color: #4343c5b0;
     z-index: -1;
-}
-&::after{
-    content: "";
-    height: 300px;
-    width: 30%;
-    /* border: 1px solid red; */
-    position: absolute;
-    left: 10%;
-    bottom: 0;
-    background-color: #fff;
-
-
 }
 `

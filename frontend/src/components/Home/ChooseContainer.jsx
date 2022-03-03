@@ -27,12 +27,13 @@ const ChooseContainer = () => {
 
 export default ChooseContainer;
 const ChooseContainerStyled = styled.div`
+width: 100%;
   padding: 4rem;
-  width: 100vw;
+
   height: 70vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background: aqua;
   .features {
     h1 {

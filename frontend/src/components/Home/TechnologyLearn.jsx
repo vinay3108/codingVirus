@@ -22,7 +22,8 @@ const TechnologyLearn = () => {
 export default TechnologyLearn
 
 const TechnologyLearnStyled=styled.div`
-/* border: 1px solid red; */
+width: 100%;
+border: 1px solid red;
 display: flex;
 justify-content: center;
 align-items: center;
