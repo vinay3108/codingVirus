@@ -1,22 +1,29 @@
 import React from 'react'
 import styled from 'styled-components';
-import NavContainer from './NavContainer'
+import NavContainer from '../Home/NavContainer'
 
-const HeadContainer = () => {
+const HeadContainer = ({heading,span,description,primaryButton,secondaryButton}) => {
   return (
     <HeadContainerStyled>
     <NavContainer/>
     <div className="container">
     <div className="heading-container">
-        <h1>Coding Virus</h1>
-        <span>Play With Logics</span>
+        <h1>{heading}</h1>
+        <span>{span}</span>
     </div>
     <div className="description">
-        <p>Many machines did simple math, but Charles Babbage’s Analytical Machine was the first computer we consider “programmable”</p>
+        <p>{description}</p>
     </div>
     <div className="button-container">
-        <button>EXPLORE MORE</button>
-        <button>ALL COURSES </button>
+        {
+            primaryButton&&
+
+            <button>{primaryButton}</button>
+        }
+        {
+            secondaryButton&&
+        <button>{secondaryButton} </button>
+        }
     </div>
     </div>
     </HeadContainerStyled>

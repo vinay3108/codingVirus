@@ -36,7 +36,8 @@ a{
 ul{
     display: flex;
     /* border: 1px solid red; */
-    width: 60vw;
+    width: 40vw;
+    padding: 0 2rem;
     justify-content: space-between;
 
 }
