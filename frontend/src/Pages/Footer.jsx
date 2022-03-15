@@ -15,9 +15,8 @@ const Footer = () => {
 
 export default Footer
 const FooterStyled=styled.div`
-height: 70vh;
+height: 50vh;
 width: 100%;
-/* border: 1px solid red; */
 display: grid;
 grid-template-columns: repeat(2 ,1fr);
 background: rgba(0,0,0,0.1);

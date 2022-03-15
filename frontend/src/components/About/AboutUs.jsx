@@ -48,7 +48,7 @@ const AboutUsStyled = styled.div`
     justify-content: space-around;
   }
   .image-container {
-    /* border: 1px solid red; */
+    /* border: 1px solid red;km */
     img {
       width: 50%;
       /* height: 400px; */

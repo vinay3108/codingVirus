@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const NavContainer = () => {
@@ -9,11 +10,11 @@ const NavContainer = () => {
         </div>
         <nav className="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">All Courses</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/blogs">Blog</Link></li>
+                <li><Link to="/allcourses">All Courses</Link></li>
+                <li><Link to="/about">About Us</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
         </nav>
     </NavContainerStyled>
@@ -25,7 +26,6 @@ export default NavContainer
 const NavContainerStyled=styled.div`
 height: 100px;
 font-size: 1.3rem;
-/* width: 100vw; */
 display: flex;
 padding: 0 3rem;
 justify-content: space-between;

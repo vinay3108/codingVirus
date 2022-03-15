@@ -5,11 +5,7 @@ const HeadTag = () => {
   return (
     <HeadTagStyled>
         <div className="content-container">
-            <div className="content"></div>
-            <div className="content"></div>
-            <div className="content"></div>
-            <div className="content"></div>
-          
+         <img src="/icons/divider.png" alt="" />
             
         </div>
     </HeadTagStyled>

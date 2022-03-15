@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import AboutFeature from "./AboutFeature";
+import * as md from 'react-icons/md';
 
 const ChooseContainer = () => {
   return (
@@ -18,8 +19,8 @@ const ChooseContainer = () => {
         </p>
       </div>
       <div className="about-feature">
-        <AboutFeature />
-        <AboutFeature />
+        <AboutFeature icon={<md.MdAccessTimeFilled/>}/>
+        <AboutFeature icon={<md.MdAccessTimeFilled/>}/>
       </div>
     </ChooseContainerStyled>
   );
@@ -28,12 +29,12 @@ const ChooseContainer = () => {
 export default ChooseContainer;
 const ChooseContainerStyled = styled.div`
   padding: 4rem;
-  height: 70vh;
+  height: 50vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap:3rem;
   /* border: 1px solid red; */
-  background: aqua;
+  /* background: aqua; */
   .features {
     h1 {
       margin: 1rem 0;

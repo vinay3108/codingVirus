@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import * as si from 'react-icons/si';
 const TechnologyLearn = () => {
   return (
     <TechnologyLearnStyled>
@@ -7,13 +8,10 @@ const TechnologyLearn = () => {
             <h1>Technologies You Will Learn</h1>
         </div>
         <div className='icon-container'>
-            <img src="/images/test.jpg" alt="" />
-            <img src="/images/test.jpg" alt="" />
-            <img src="/images/test.jpg" alt="" />
-            <img src="/images/test.jpg" alt="" />
-            <img src="/images/test.jpg" alt="" />
-            <img src="/images/test.jpg" alt="" />
-            <img src="/images/test.jpg" alt="" />
+           <si.SiCplusplus/>
+           <si.SiPython/>
+           <si.SiMysql/>
+           <si.SiJavascript/>
         </div>
         </TechnologyLearnStyled>
   )
@@ -30,15 +28,17 @@ align-items: center;
 flex-direction: column;
 font-size: 1.5rem;
 margin-top: 2rem;
+/* background-color: aqua; */
 .icon-container{
     display: flex;
+    margin-top: 1rem;
     /* border: 1px solid red; */
     justify-content: space-between;
     align-items: center;
-    img{
-        height: 100px;
-        width: 100px;
-        margin: 0 1rem;
+    width: 50%;
+    svg{
+        color:rgba(0,0,0,0.76);
+        font-size: 3rem;
     }
 }
 

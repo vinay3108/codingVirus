@@ -10,7 +10,6 @@ const Contact = () => {
       description={"Still worry about coding skills ? Contact Us here!"}
       />
       <ContactForm/>
-      <Footer/>
     </>
   )
 }

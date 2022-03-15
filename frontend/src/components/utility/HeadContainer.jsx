@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import NavContainer from '../Home/NavContainer'
+import * as ai from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const HeadContainer = ({heading,span,description,primaryButton,secondaryButton}) => {
   return (
@@ -18,12 +20,19 @@ const HeadContainer = ({heading,span,description,primaryButton,secondaryButton})
         {
             primaryButton&&
 
-            <button>{primaryButton}</button>
+            <button className='primary-btn'>{primaryButton}</button>
         }
+        <div className="secondary">
         {
             secondaryButton&&
-        <button>{secondaryButton} </button>
+            <>
+            <Link to='/allcourses'>
+                <span><ai.AiFillCaretRight/></span>
+                <button className='secondary-btn'>{secondaryButton} </button>
+            </Link>
+        </>
         }
+        </div>
     </div>
     </div>
     </HeadContainerStyled>
@@ -69,16 +78,44 @@ const HeadContainerStyled=styled.div`
     }
     .button-container{
         /* border: 1px solid red; */
+        display: flex;
+        
         margin-top: 1rem;
         button{
-            margin: 0 1rem;
-            padding: 1rem 1rem;
+           
             border-radius: 50px;
             outline: none;
             border: none;
             transition: all 0.4s ease;
             &:hover{
                 cursor: pointer;
+            }
+
+        }
+        .primary-btn{
+             margin: 0 1rem;
+            padding: 1rem 1.5rem;
+            color:#fff;
+            font-weight: 600;
+            background-color: #ffab5e;
+        
+        }
+        .secondary{
+            padding: 1rem 1.5rem;
+
+            span{
+                color:#fff;
+                margin-right: 0.4rem;
+            }
+        }
+        .secondary-btn{
+            color:#fff;
+            font-weight: 600;
+            background: transparent;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+            cursor: pointer;
+            color: #ffab5e;
             }
         }
     }
@@ -91,9 +128,10 @@ const HeadContainerStyled=styled.div`
         left: 0;
         position: absolute;
         border-radius: 0px 0px 250px 0px;
-        /* background:url("/images/header.jpg")center center/cover; */
         /* border: 1px solid green; */
-        background-color: #159b9b;
+        /* background:url()center; */
+        background: linear-gradient(to right , rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/images/header-experience.jpg') center center/cover;
         z-index: -1;
     }
+   
 `;
